@@ -1,0 +1,23 @@
+.btn-disable-class,
+.btn-disable-class:active,
+.btn-disable-class:hover,
+.btn-disable-class:focus {
+    background-color: grey;
+    border-color: grey;
+}
+
+.device-button-label {
+    color: black;
+}
+
+.device-button {
+    padding: 12px 65px;
+}
+
+.device-logs-info {
+    border: 1px solid black;
+    text-align: left;
+    margin-left: 35em;
+    line-height: 1.8;
+    display: none;
+}

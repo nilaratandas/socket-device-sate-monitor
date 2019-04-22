@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Device State Monitor</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <h1 id="deviceStatus"></h1>
+            <br/><br/>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="hide-content">
+                <div class="label device-button-label">
+                    <h4>Click on button to change device state</h4>
+                </div>
+                <button type="button" class="btn btn-success device-button" id="deviceButton">ON</button>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 device-logs-info" id="dumpDeviceLogs">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Socket JS from nodemodule -->
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- Client JS-->
+    <script src="client.js"></script>
+</body>
+
+</html>
